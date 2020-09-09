@@ -36,18 +36,32 @@ html(lang="es")
     link(rel="stylesheet", href="css/styles.css")
     block title-description
   body
-    //- header  
-    //-   .header__whatsapp
-    //-     <i class="fab fa-whatsapp"></i>
-    //-     a(href="tel:+51945115558") 945 115 558
-    //-   form(action="index.php").search
-    //-     input(type="text" placeholder="Buscar").search__input
-    //-     button.search__button <i class="fas fa-search"></i>
-    //-   .social-networks
-    //-     a(href="https://es-la.facebook.com/" target="_blank").social-networks__item <i class="fab fa-facebook-f"></i>
-    //-     a(href="https://www.instagram.com/?hl=es-la" target="_blank").social-networks__item <i class="fab fa-facebook-f"></i>
-
-
+    header
+      .header__top
+        .header__container--top.container  
+          .header__whatsapp
+            <i class="fab fa-whatsapp"></i>
+            a(href="tel:+51945115558") 945 115 558
+          form(action="index.php").header__search.search
+            input(type="text" placeholder="Buscar").search__input
+            button.search__button <i class="fas fa-search"></i>
+          .social-networks
+            a(href="https://es-la.facebook.com/" target="_blank").social-networks__item <i class="fab fa-facebook-f"></i>
+            a(href="https://www.instagram.com/?hl=es-la" target="_blank").social-networks__item <i class="fab fa-instagram"></i>
+            a(href="https://www.youtube.com/?hl=es-419&gl=PE" target="_blank").social-networks__item <i class="fab fa-youtube"></i>
+      .header__main
+        .header__container--main.container
+          picture.header__logo
+            a(href="#")
+              img(src=`${img}logo-ferreteria-company.png`, alt="Logo ferreteria company")
+          nav.header__nav
+            ul.main-menu
+              li.main-menu__item: a(href="#").main-menu__link INICIO
+              li.main-menu__item: a(href="#").main-menu__link TUBERIAS
+              li.main-menu__item: a(href="#").main-menu__link CONEXIONES
+              li.main-menu__item: a(href="#").main-menu__link ABRASIVOS
+              li.main-menu__item: a(href="#").main-menu__link GRIFERÍAS
+              li.main-menu__item: a(href="#").main-menu__link CONTACTO
     block banner
     block main
     //JQUERY

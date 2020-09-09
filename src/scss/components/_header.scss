@@ -1,3 +1,44 @@
 .header {
-  
+  position: sticky;
+  top: 0;
+  left: 0;
+  &__container {
+    &--top {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1.5rem 0;
+    }
+    &--main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 8rem;
+    }
+  }
+  &__top {
+    background-color: $primary-color;
+  }
+  &__whatsapp {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-left: 15rem;
+    & svg {
+      font-size: 3rem;
+      margin-right: 1rem;
+    }
+  }
+  &__main {
+    background-image: url("../assets/img/fondo-header-footer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  &__logo {
+    margin-bottom: 5rem;
+  }
+  &__nav {
+    margin-right: 14rem;
+  }
 }

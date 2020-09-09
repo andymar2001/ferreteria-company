@@ -1,0 +1,43 @@
+.card-service {
+  &__img {
+    & img {
+      width: 100%;
+    }
+  }
+  &__title {
+    margin: 0;
+    margin-top: 2rem;
+    font-family: $main-title;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
+.card-video {
+  position: relative;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  &__button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 2rem 4rem;
+    background-color: #62aeb3;
+    color: $white;
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    & svg {
+      margin-right: 1rem;
+    }
+    @include mobile {
+      padding: 1.5rem;
+    }
+    &--modify {
+      position: absolute;
+      background-color: transparent;
+      color: $white;
+      font-size: 8rem;
+    }
+  }
+}

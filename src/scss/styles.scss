@@ -1,0 +1,24 @@
+//Config
+@import "config/config";
+@import "config/colors";
+@import "config/fonts";
+//Mixins
+@import "mixins/breakpoints";
+@import "mixins/reset-list.scss";
+@import "mixins/transitions";
+//Styles base
+@import "base/normalize";
+@import "base/base";
+//Components
+@import "components/header";
+@import "components/search";
+@import "components/main-menu.scss";
+@import "components/cards";
+@import "components/form";
+@import "components/inputs.scss";
+@import "components/buttons.scss";
+@import "components/footer.scss";
+@import "components/burguer";
+//Layouts
+@import "layout/banner";
+//Pages

@@ -1,0 +1,8 @@
+@mixin bg-color($bg-color, $color: $white) {
+  transition-property: background-color, color;
+  transition-duration: 0.6s;
+  &:hover {
+    background-color: $bg-color;
+    color: $color;
+  }
+}

@@ -1,0 +1,26 @@
+/*
+UI States
+  :enabled
+  :disabled
+  :checked
+  :in-range
+  :out-of-range
+  :required
+  :optional
+  :valid
+  :invalid
+  :read-only
+  :read-write
+*/
+.input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 2rem 2.5rem;
+  color: $white;
+  border-radius: .5rem;
+  &::placeholder {
+    color: $white;
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,10 @@
+.main-menu {
+  @include reset-list;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  &__item {
+  }
+  &__link {
+  }
+}

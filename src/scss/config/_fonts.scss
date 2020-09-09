@@ -1,0 +1,16 @@
+@font-face {
+  src: url("../assets/fonts/coolvetica-rg.ttf");
+  font-family: "coolvetica-rg";
+}
+@font-face {
+  src: url("../assets/fonts/Lato-Regular.ttf");
+  font-family: "lato";
+}
+:root {
+  --main-title: "bebasneue-bold", sans-serif;
+  --main-font: "coolvetica-rg", sans-serif;
+}
+
+$main-title: var(--main-title);
+$main-font: var(--main-font);
+$second-font: var(--second-font);

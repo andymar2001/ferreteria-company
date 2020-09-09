@@ -1,0 +1,64 @@
+include ../config/config 
+include ../includes/mixins 
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //FAVICON
+    link(rel="shortcut icon", href=`${favicon}`)
+    //OPEN GRAPH
+    meta(property="og:title" content=`${tituloRedes}`)
+    meta(property="og:type" content="website")
+    meta(property="og:url" content=`${urlWeb}`)
+    meta(property="og:image" content=`${imgWeb}`)
+    meta(property="og:description" content=`${descripccionRedes}`)
+    //SCHEMA MARKUP FOR GOOGLE
+    meta(itemprop="name" content=`${tituloRedes}`)
+    meta(itemprop="description" content=`${descripccionRedes}`)
+    meta(itemprop="image" content=`${imgWeb}`)
+    //TWITTER CARD DATA
+    meta(name="twitter:card" content=`${twitterCard}`)
+    meta(name="twitter:site" content=`${urlWeb}`)
+    meta(name="twitter:title" content=`${tituloRedes}`)
+    meta(name="twitter:description" content=`${descripccionRedes}`)
+    meta(name="twitter:image:src" content=`${imgWeb}`)
+    //FONTAWESOME
+    link(rel="stylesheet", href="assets/fontawesome/css/all.min.css")
+    script(src="assets/fontawesome/js/all.min.js")
+    //SLICK
+    link(rel="stylesheet", href="assets/slick/slick.css")
+    //LIGHTBOX
+    link(rel="stylesheet", href="assets/lightbox/dist/css/lightbox.min.css")
+    //MODAL VIDEO
+    link(rel="stylesheet", href="assets/modal-video/css/modal-video.min.css")
+    //STYLE BASE
+    link(rel="stylesheet", href="css/styles.css")
+    block title-description
+  body
+    //- header  
+    //-   .header__whatsapp
+    //-     <i class="fab fa-whatsapp"></i>
+    //-     a(href="tel:+51945115558") 945 115 558
+    //-   form(action="index.php").search
+    //-     input(type="text" placeholder="Buscar").search__input
+    //-     button.search__button <i class="fas fa-search"></i>
+    //-   .social-networks
+    //-     a(href="https://es-la.facebook.com/" target="_blank").social-networks__item <i class="fab fa-facebook-f"></i>
+    //-     a(href="https://www.instagram.com/?hl=es-la" target="_blank").social-networks__item <i class="fab fa-facebook-f"></i>
+
+
+    block banner
+    block main
+    //JQUERY
+    script(src="js/jquery.js")
+    //SLICK
+    script(src="assets/slick/slick.min.js")
+    //VIDEO MODAL
+    script(src="assets/modal-video/js/jquery-modal-video.min.js")
+    //LIGHTBOX
+    script(src="assets/lightbox/dist/js/lightbox.min.js")
+    //MY SCRIPTS
+    script(src="js/scripts-min.js")
+
+

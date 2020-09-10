@@ -27,7 +27,8 @@ html(lang="es")
     link(rel="stylesheet", href="assets/fontawesome/css/all.min.css")
     script(src="assets/fontawesome/js/all.min.js")
     //SLICK
-    link(rel="stylesheet", href="assets/slick/slick.css")
+    link(rel="stylesheet", href="assets/slick/slick/slick.css")
+    link(rel="stylesheet", href="assets/slick/slick/slick-theme.css")
     //LIGHTBOX
     link(rel="stylesheet", href="assets/lightbox/dist/css/lightbox.min.css")
     //MODAL VIDEO
@@ -36,7 +37,7 @@ html(lang="es")
     link(rel="stylesheet", href="css/styles.css")
     block title-description
   body
-    header
+    header.header
       .header__top
         .header__container--top.container  
           .header__whatsapp
@@ -87,11 +88,11 @@ html(lang="es")
         p.credits__text DESARROLLADO POR:
         picture.credits__logo
           a(href="https://evolucionmedia.pe/" target="_blank")
-            img(src=`${img}logo-evolucionmedia.png`, alt="Evolucion media logo")
+            img(src=`${img}logo-evolucionmedia.png`, alt="Logo de evolucionmedia")
     //JQUERY
     script(src="js/jquery.js")
     //SLICK
-    script(src="assets/slick/slick.min.js")
+    script(src="assets/slick/slick/slick.min.js")
     //VIDEO MODAL
     script(src="assets/modal-video/js/jquery-modal-video.min.js")
     //LIGHTBOX

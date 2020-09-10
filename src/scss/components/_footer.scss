@@ -1,3 +1,26 @@
 .footer {
-  
+  background-image: url("../assets/img/fondo-header-footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  &__container {
+    padding: 4rem 0;
+    display: grid;
+    gap: 3rem;
+  }
+  &__information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    & svg {
+      font-size: 2.5rem;
+      margin-right: 0.5rem;
+    }
+  }
 }

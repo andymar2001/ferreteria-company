@@ -6,9 +6,10 @@
   src: url("../assets/fonts/Lato-Regular.ttf");
   font-family: "lato";
 }
+
 :root {
-  --main-title: "bebasneue-bold", sans-serif;
-  --main-font: "coolvetica-rg", sans-serif;
+  --main-title: "coolvetica-rg", sans-serif;
+  --main-font: "lato", sans-serif;
 }
 
 $main-title: var(--main-title);

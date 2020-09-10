@@ -64,6 +64,30 @@ html(lang="es")
               li.main-menu__item: a(href="#").main-menu__link CONTACTO
     block banner
     block main
+    footer.footer
+      .footer__container.container
+        .footer__networks.center
+          .social-networks
+            a(href="https://es-la.facebook.com/" target="_blank").social-networks__item <i class="fab fa-facebook-f"></i>
+            a(href="https://www.instagram.com/?hl=es-la" target="_blank").social-networks__item <i class="fab fa-instagram"></i>
+            a(href="https://www.youtube.com/?hl=es-419&gl=PE" target="_blank").social-networks__item <i class="fab fa-youtube"></i>
+        .footer__nav.center
+          ul.main-menu--footer
+            li.main-menu__item--footer: a(href="#").main-menu__link INICIO
+            li.main-menu__item--footer: a(href="#").main-menu__link TUBERIAS
+            li.main-menu__item--footer: a(href="#").main-menu__link CONEXIONES
+            li.main-menu__item--footer: a(href="#").main-menu__link ABRASIVOS
+            li.main-menu__item--footer: a(href="#").main-menu__link GRIFERÍAS
+            li.main-menu__item--footer: a(href="#").main-menu__link CONTACTO
+        .footer__information
+          p.footer__item <i class="fas fa-map-marker-alt"></i> Oficina: Av. Del Contador, Trujillo 13007
+          p.footer__item <i class="fas fa-envelope"></i> E-mail: gerencia@company.pe
+          p.footer__item <i class="fab fa-whatsapp"></i> Número empresarial: 945 115 558
+      .credits
+        p.credits__text DESARROLLADO POR:
+        picture.credits__logo
+          a(href="https://evolucionmedia.pe/" target="_blank")
+            img(src=`${img}logo-evolucionmedia.png`, alt="Evolucion media logo")
     //JQUERY
     script(src="js/jquery.js")
     //SLICK

@@ -1,6 +1,7 @@
 .card-product {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   &:hover &__img {
     transform: scale(1.05);
     filter: brightness(0.9);
@@ -11,6 +12,9 @@
   &__img {
     transition-property: transform, filter;
     transition-duration: 0.5s;
+    & img {
+      width: 100%;
+    }
   }
   &__title {
     background-color: $primary-color;
@@ -24,5 +28,9 @@
     font-weight: 700;
     transition-property: color;
     transition-duration: 0.5s;
+    @include mobile {
+      padding: 2rem 0;
+      font-size: 2rem;
+    }
   }
 }

@@ -6,6 +6,13 @@
     display: flex;
     & * + * {
       border-left: 0.3rem solid $primary-color;
+      @include tablet {
+        border-left: none;
+        margin-top: 2rem;
+      }
+    }
+    @include tablet {
+      flex-direction: column;
     }
   }
   & * + * {
@@ -19,6 +26,9 @@
       padding: 0 3rem;
       font-family: $main-title;
       font-size: 2rem;
+      @include tablet {
+        padding: 0;
+      }
     }
   }
   &__link {

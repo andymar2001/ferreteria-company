@@ -2,6 +2,9 @@
   background-color: #ededed;
   padding: 5rem 0;
   border-left: 0.5rem solid $primary-color;
+  @include mobile {
+    border-left: none;
+  }
   &__title {
     margin: 0;
     margin-left: 3rem;
@@ -11,6 +14,12 @@
     display: flex;
     align-items: center;
     position: relative;
+    @include tablet {
+      margin-left: 0;
+    }
+    @include mobile {
+      font-size: 3.6rem;
+    }
     &::after {
       content: "";
       left: 0;
@@ -19,6 +28,11 @@
       width: 35rem;
       height: 1rem;
       background-color: $primary-color;
+      @include mobile {
+        width: 100%;
+        bottom: -2rem;
+        height: 0.6rem;
+      }
     }
     & a {
       margin-left: 2rem;
@@ -32,5 +46,12 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include mobile {
+      margin-top: 5rem;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

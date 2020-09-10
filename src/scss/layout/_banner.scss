@@ -1,17 +1,28 @@
+$size-arrow: 7rem;
+$separation: 2rem;
 .banner {
   position: relative;
   & .slick-prev,
   & .slick-next {
     z-index: 20;
+    width: $size-arrow;
+    height: $size-arrow;
     &::before {
-      font-size: 6rem;
+      font-size: $size-arrow;
+    }
+    @include mobile {
+      width: 4rem;
+      height: 4rem;
+      &::before {
+        font-size: 4rem;
+      }
     }
   }
   & .slick-prev {
-    left: 2rem;
+    left: $separation;
   }
   & .slick-next {
-    right: 6rem;
+    right: $separation;
   }
   &__img {
     & img {

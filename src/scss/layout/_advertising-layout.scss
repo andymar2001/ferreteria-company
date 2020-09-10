@@ -13,17 +13,31 @@
   &__grid {
     display: flex;
     justify-content: space-around;
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8rem;
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
   }
   &__item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    @include mobile {
+    }
   }
   &__title {
     margin: 0;
     font-size: 2rem;
     margin-top: 1rem;
     color: $primary-color;
+    @include tablet {
+      font-size: 1.6rem;
+    }
   }
 }

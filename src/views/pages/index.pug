@@ -25,7 +25,91 @@ block banner
       .data__item
         img.data__icon(src=`${img}/icons/data4.png`, alt="icono ferreteria company")
         p.data__text MÚLTIPLES FORMAS Y MEDIOS DE PAGO
-  
+block main
+  main.main
+    section.products-layout
+      .products-layout__container.container
+        h2.products-layout__title 
+          |Productos Populares
+          a(href="#") Ver más
+        .products-layout__grid
+          article.card-product
+            figure.card-product__img
+              img(src=`${img}construccion.jpg`, alt="construccion ferreteria company")
+            h3.card-product__title CONSTRUCCIÓN
+          article.card-product
+            figure.card-product__img
+              img(src=`${img}tuberias.jpg`, alt="construccion ferreteria company")
+            h3.card-product__title TUBERÍAS
+          article.card-product
+            figure.card-product__img
+              img(src=`${img}conexiones.jpg`, alt="construccion ferreteria company")
+            h3.card-product__title CONEXIONES
+          article.card-product
+            figure.card-product__img
+              img(src=`${img}abrasivos.jpg`, alt="construccion ferreteria company")
+            h3.card-product__title ABRASIVOS
+          article.card-product
+            figure.card-product__img
+              img(src=`${img}griferias.jpg`, alt="construccion ferreteria company")
+            h3.card-product__title GRIFERÍAS
+    section.advertising-layout
+      h2.hide Por qué elegir a ferreteria company
+      picture.advertising-layout__img
+        img(src=`${img}publicidad1.jpg`, alt="publicidad ferreteria company")
+      picture.advertising-layout__img
+        img(src=`${img}publicidad2.jpg`, alt="publicidad ferreteria company")
+      .advertising-layout__container
+        .advertising-layout__grid.container
+          .advertising-layout__item
+            img.advertising-layout__icon(src=`${img}icons/precios-competitivos.png`, alt="precios competitivos")
+            p.advertising-layout__title PRECIOS COMPETITIVOS
+          .advertising-layout__item
+            img.advertising-layout__icon(src=`${img}icons/cotiza-facil.png`, alt="cotiza facil")
+            p.advertising-layout__title COTIZA FÁCIL
+          .advertising-layout__item
+            img.advertising-layout__icon(src=`${img}icons/servicio-entrega.png`, alt="servicio entrega")
+            p.advertising-layout__title SERVICIO DE ENTREGA
+          .advertising-layout__item
+            img.advertising-layout__icon(src=`${img}icons/informes.png`, alt="informes")
+            p.advertising-layout__title INFORMES
+    section.contact-layout
+      .contact-layout__top
+        .contact-layout__container--top.container
+          h2.contact-layout__title CONTACTO 
+          .contact-layout__contact
+            form.form-contact(action="#")
+              .form-contact__field
+                input.input(type="text" name="nombres" placeholder="Nombres y Apellidos")
+              .form-contact__field
+                input.input(type="email" name="email" placeholder="Correo electrónico")
+              .form-contact__field
+                input.input(type="text" name="telefono" placeholder="Teléfono")
+              .form-contact__field
+                input.input(type="text" name="empresa" placeholder="Empresa")
+              .form-contact__field
+                input.input(type="text" name="direccion" placeholder="Dirección")
+              .form-contact__field
+                textarea.input(name="mensaje", cols="30", rows="10" placeholder="Mensaje")
+              input.form-contact__button.button(type="submit" value="Enviar") 
+      .contact-layout__main
+        .contact-layout__container--main.container
+          .contact-layout__information
+            picture.contact-layout__logo
+              img(src=`${img}logo-amarillo.png`, alt="segundo logo de ferreteria company")
+            div.contact-layout__item
+              <i class="fas fa-map-marker-alt"></i> 
+              p.contact-layout__text Oficina: Av. Del Contador, Trujillo 13007      
+            div.contact-layout__item
+              <i class="fas fa-envelope"></i> 
+              p.contact-layout__text E-mail: gerencia@company.pe    
+            div.contact-layout__item
+              <i class="fab fa-whatsapp"></i> 
+              p.contact-layout__text Número empresarial: 945 115 558
+            p.contact-layout__text--schedule HORARIO DE ATENCIÓN
+            p.contact-layout__schedule Lunes - Viernes: 9:00 a.m - 5:00 p.m Sábado: 8:00 a.m - 1:00 p.m
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.816160639748!2d-79.00945158515553!3d-8.120192294154375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad17cdf3c0b3cb%3A0xd406e9225f24920b!2sAv%20Del%20Contador%2C%20Trujillo%2013007!5e0!3m2!1ses!2spe!4v1599758971105!5m2!1ses!2spe" class="contact-layout__map" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
 
   
 

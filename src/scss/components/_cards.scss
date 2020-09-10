@@ -1,43 +1,28 @@
-.card-service {
+.card-product {
+  position: relative;
+  overflow: hidden;
+  &:hover &__img {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+  }
+  &:hover &__title {
+    color: $white;
+  }
   &__img {
-    & img {
-      width: 100%;
-    }
+    transition-property: transform, filter;
+    transition-duration: 0.5s;
   }
   &__title {
+    background-color: $primary-color;
     margin: 0;
-    margin-top: 2rem;
-    font-family: $main-title;
-    font-size: 3.5rem;
-    text-align: center;
-  }
-}
-.card-video {
-  position: relative;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  &__button {
     position: absolute;
-    display: flex;
-    align-items: center;
-    border: none;
-    padding: 2rem 4rem;
-    background-color: #62aeb3;
-    color: $white;
-    border-radius: 3rem;
-    font-size: 1.8rem;
-    & svg {
-      margin-right: 1rem;
-    }
-    @include mobile {
-      padding: 1.5rem;
-    }
-    &--modify {
-      position: absolute;
-      background-color: transparent;
-      color: $white;
-      font-size: 8rem;
-    }
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-weight: 700;
+    transition-property: color;
+    transition-duration: 0.5s;
   }
 }

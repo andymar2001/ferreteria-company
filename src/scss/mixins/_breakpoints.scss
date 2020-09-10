@@ -1,5 +1,5 @@
 $tablet: 800px;
-$mobile: 480px;
+$mobile: 580px;
 
 @mixin tablet {
   @media screen and (max-width: $tablet) {

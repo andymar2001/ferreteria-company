@@ -1,1 +1,1 @@
-"use strict";$(".banner__slider").slick({slidesToShow:1,slidesToScroll:1,autoplay:!0,autoplaySpeed:2500});
+"use strict";$(".banner__slider").slick({slidesToShow:1,slidesToScroll:1,autoplay:!0,autoplaySpeed:2500});var btnNav=document.getElementById("btn-nav"),nav=document.getElementById("nav");btnNav.addEventListener("click",(function(e){nav.classList.toggle("header__nav--show")})),nav.addEventListener("click",(function(e){"nav"!=e.target.id&&"main-menu__link"!=e.target.className||nav.classList.remove("header__nav--show")}));

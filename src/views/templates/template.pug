@@ -5,6 +5,8 @@ html(lang="es")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //COLOR-ANDROID
+    <meta name="theme-color" content="#EBEBEB">
     //FAVICON
     link(rel="shortcut icon", href=`${favicon}`)
     //OPEN GRAPH
@@ -47,7 +49,7 @@ html(lang="es")
           form(action="index.php").header__search.search
             input(type="text" placeholder="Buscar").search__input
             button.search__button <i class="fas fa-search"></i>
-          .social-networks
+          .header__networks.social-networks
             a(href="https://es-la.facebook.com/" target="_blank").social-networks__item <i class="fab fa-facebook-f"></i>
             a(href="https://www.instagram.com/?hl=es-la" target="_blank").social-networks__item <i class="fab fa-instagram"></i>
             a(href="https://www.youtube.com/?hl=es-419&gl=PE" target="_blank").social-networks__item <i class="fab fa-youtube"></i>
@@ -56,7 +58,7 @@ html(lang="es")
           picture.header__logo
             a(href="#")
               img(src=`${img}logo-ferreteria-company.png`, alt="Logo ferreteria company")
-          nav.header__nav
+          nav#nav.header__nav
             ul.main-menu
               li.main-menu__item: a(href="#").main-menu__link INICIO
               li.main-menu__item: a(href="#").main-menu__link TUBERIAS
@@ -64,6 +66,8 @@ html(lang="es")
               li.main-menu__item: a(href="#").main-menu__link ABRASIVOS
               li.main-menu__item: a(href="#").main-menu__link GRIFERÍAS
               li.main-menu__item: a(href="#").main-menu__link CONTACTO
+          #btn-nav.header__burguer
+            <i class="fas fa-bars"></i>
     block banner
     block main
     footer.footer

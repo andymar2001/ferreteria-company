@@ -4,6 +4,7 @@
   border-left: 0.5rem solid $primary-color;
   @include mobile {
     border-left: none;
+    padding: 3rem 0;
   }
   &__title {
     margin: 0;

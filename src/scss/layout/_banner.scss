@@ -11,18 +11,24 @@ $separation: 2rem;
       font-size: $size-arrow;
     }
     @include mobile {
-      width: 4rem;
-      height: 4rem;
+      width: 5rem;
+      height: 5rem;
       &::before {
-        font-size: 4rem;
+        font-size: 5rem;
       }
     }
   }
   & .slick-prev {
     left: $separation;
+    @include mobile {
+      left: 0.5rem;
+    }
   }
   & .slick-next {
     right: $separation;
+    @include mobile {
+      right: 0.5rem;
+    }
   }
   &__img {
     & img {

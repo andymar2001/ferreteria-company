@@ -6,10 +6,16 @@ block banner
   .banner
     .banner__slider
       picture.banner__img
+        source(media="(max-width: 480px)", srcset=`${img}banner-mobile.jpg`)
+        source(media="(max-width: 900px)", srcset=`${img}banner.jpg`)
         img(src=`${img}banner.jpg`, alt="banner de ferreteria company")
       picture.banner__img
+        source(media="(max-width: 480px)", srcset=`${img}banner-mobile.jpg`)
+        source(media="(max-width: 900px)", srcset=`${img}banner.jpg`)
         img(src=`${img}banner.jpg`, alt="banner de ferreteria company")
       picture.banner__img
+        source(media="(max-width: 480px)", srcset=`${img}banner-mobile.jpg`)
+        source(media="(max-width: 900px)", srcset=`${img}banner.jpg`)
         img(src=`${img}banner.jpg`, alt="banner de ferreteria company")
   .data
     .data__container.container

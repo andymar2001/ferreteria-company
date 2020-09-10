@@ -1,6 +1,15 @@
 .main-menu {
   @include reset-list;
   display: flex;
+  @include tablet {
+    width: 70%;
+    background-color: #1c1c1c;
+    color: $white;
+    flex-direction: column;
+    height: 100%;
+    padding: 3rem 2rem;
+    overflow-y: auto;
+  }
   &--footer {
     @include reset-list;
     display: flex;
@@ -17,11 +26,18 @@
   }
   & * + * {
     border-left: 0.3rem solid $primary-color;
+    @include tablet {
+      border-left: none;
+      margin-top: 3rem;
+    }
   }
   &__item {
     padding: 0 1rem;
     font-family: $main-title;
     font-size: 2rem;
+    @include tablet {
+      padding: 0;
+    }
     &--footer {
       padding: 0 3rem;
       font-family: $main-title;

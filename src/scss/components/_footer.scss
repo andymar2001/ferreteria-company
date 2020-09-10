@@ -4,7 +4,9 @@
   background-repeat: no-repeat;
   background-position: top;
   & .center {
-    justify-content: flex-start;
+    @include tablet {
+      justify-content: flex-start;
+    }
   }
   &__container {
     padding-top: 4rem;

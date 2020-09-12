@@ -1,0 +1,50 @@
+extends ../templates/template
+block title-description
+  title Ferreteria Company - Detalle de producto
+  meta(name="description" content="Detalle de producto")
+block main
+  main.main
+    section.product-detail.section
+      .product-detail__container.container
+        .product-detail__gallery
+          .product-detail__slider
+            div
+              figure.product-detail__img
+                img(src=`${img}producto.jpg`, alt="imagen producto")
+            div
+              figure.product-detail__img
+                img(src=`${img}producto.jpg`, alt="imagen producto")
+            div
+              figure.product-detail__img
+                img(src=`${img}producto.jpg`, alt="imagen producto")
+          .product-detail__slider--nav
+            div
+              figure.product-detail__img
+                img(src=`${img}producto.jpg`, alt="imagen producto")
+            div
+              figure.product-detail__img
+                img(src=`${img}producto.jpg`, alt="imagen producto")
+            div
+              figure.product-detail__img
+                img(src=`${img}producto.jpg`, alt="imagen producto")
+            div
+              figure.product-detail__img
+                img(src=`${img}producto.jpg`, alt="imagen producto")
+            div
+              figure.product-detail__img
+                img(src=`${img}producto.jpg`, alt="imagen producto")
+        .product-detail__data
+          h2.product-detail__title Titulo
+          p.product-detail__description Una de sus ventajas es que se utiliza menos unidades por metro cuadrado y mayor productividad.
+          hr
+          div.product-detail__list
+            p Denominación del Bien <span>TUBULAR</span>
+            p Denominación del Bien <span>TUBULAR</span>
+            p Denominación del Bien <span>TUBULAR</span>
+            p Denominación del Bien <span>TUBULAR</span>
+            p Denominación del Bien <span>TUBULAR</span>
+          a.product-detail__pdf(href="#" target="_blank") Descargar Ficha Técnica
+
+
+
+

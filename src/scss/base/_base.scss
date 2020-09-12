@@ -74,6 +74,8 @@ button {
 }
 
 .section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .center {
@@ -83,6 +85,38 @@ button {
 }
 
 .title {
+  margin: 0;
+  font-size: 4rem;
+  font-family: $main-title;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  @include tablet {
+    margin-left: 0;
+  }
+  @include mobile {
+    font-size: 3.6rem;
+  }
+  &::after {
+    content: "";
+    left: 0;
+    bottom: -1.2rem;
+    position: absolute;
+    width: calc(100% - 2rem);
+    height: 0.7rem;
+    background-color: $primary-color;
+    @include mobile {
+      width: 100%;
+      bottom: -2rem;
+      height: 0.6rem;
+    }
+  }
 }
 .subtitle {
+}
+.label {
+  font-weight: 700;
+  color: rgb(87, 87, 87);
+  display: inline-block;
+  margin-bottom: 1rem;
 }

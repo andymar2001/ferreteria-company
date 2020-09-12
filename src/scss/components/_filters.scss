@@ -1,0 +1,9 @@
+.filters {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__text {
+    margin: 0;
+  }
+}

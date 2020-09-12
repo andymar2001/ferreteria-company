@@ -15,8 +15,8 @@ UI States
 .input {
   display: block;
   width: 100%;
-  border: none;
-  padding: 2rem 2.5rem;
+  border: 0.1rem solid #ccc;
+  padding: 1.5rem 1.8rem;
   border-radius: 0.5rem;
   @include mobile {
     padding: 1.8rem 2rem;

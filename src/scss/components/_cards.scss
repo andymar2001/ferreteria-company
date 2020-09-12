@@ -34,3 +34,49 @@
     }
   }
 }
+.card {
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2rem 0 #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition-property: transform, background-color;
+  transition-duration: 0.5s;
+  &--quote {
+    align-items: stretch;
+  }
+  &__category,
+  &__title {
+    margin: 0;
+    margin-top: 1rem;
+    transition-property: color;
+    transition-duration: 0.5s;
+  }
+  &__category {
+    color: rgb(151, 151, 151);
+  }
+  &__title {
+    color: rgb(54, 54, 54);
+  }
+  &:hover {
+    background-color: $primary-color;
+    transform: scale(1.04);
+  }
+  &:hover &__category,
+  &:hover &__title,
+  &:hover .label {
+    color: #fff;
+  }
+  &__group {
+    margin-top: 1rem;
+    & .label {
+      transition-property: color;
+      transition-duration: 0.5s;
+    }
+    & .input {
+      width: 100%;
+    }
+  }
+}

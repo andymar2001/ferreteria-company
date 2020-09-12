@@ -2,6 +2,20 @@ $size-arrow: 7rem;
 $separation: 2rem;
 .banner {
   position: relative;
+  &--page {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+  }
+  &__title {
+    font-family: $main-title;
+    font-weight: 400;
+    margin: 0;
+    font-size: 5rem;
+    color: $white;
+  }
   & .slick-prev,
   & .slick-next {
     z-index: 20;

@@ -21,6 +21,7 @@
 @import "components/footer.scss";
 @import "components/credits";
 @import "components/burguer";
+@import "components/filters";
 //Layouts
 @import "layout/banner";
 @import "layout/data";
@@ -28,3 +29,6 @@
 @import "layout/advertising-layout";
 @import "layout/contact-layout";
 //Pages
+@import "pages/products-page";
+@import "pages/product-detail";
+@import "pages/quote";

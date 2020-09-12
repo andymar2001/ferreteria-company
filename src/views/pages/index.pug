@@ -39,26 +39,31 @@ block main
           |Productos Populares
           //a(href="#") Ver más
         .products-layout__grid
-          article.card-product
-            figure.card-product__img
-              img(src=`${img}construccion.jpg`, alt="construccion ferreteria company")
-            h3.card-product__title CONSTRUCCIÓN
-          article.card-product
-            figure.card-product__img
-              img(src=`${img}tuberias.jpg`, alt="construccion ferreteria company")
-            h3.card-product__title TUBERÍAS
-          article.card-product
-            figure.card-product__img
-              img(src=`${img}conexiones.jpg`, alt="construccion ferreteria company")
-            h3.card-product__title CONEXIONES
-          article.card-product
-            figure.card-product__img
-              img(src=`${img}abrasivos.jpg`, alt="construccion ferreteria company")
-            h3.card-product__title ABRASIVOS
-          article.card-product
-            figure.card-product__img
-              img(src=`${img}griferias.jpg`, alt="construccion ferreteria company")
-            h3.card-product__title GRIFERÍAS
+          a(href="productos.html")
+            article.card-product
+              figure.card-product__img
+                img(src=`${img}construccion.jpg`, alt="construccion ferreteria company")
+              h3.card-product__title CONSTRUCCIÓN
+          a(href="productos.html")
+            article.card-product
+              figure.card-product__img
+                img(src=`${img}tuberias.jpg`, alt="construccion ferreteria company")
+              h3.card-product__title TUBERÍAS
+          a(href="productos.html")
+            article.card-product
+              figure.card-product__img
+                img(src=`${img}conexiones.jpg`, alt="construccion ferreteria company")
+              h3.card-product__title CONEXIONES
+          a(href="productos.html")
+            article.card-product
+              figure.card-product__img
+                img(src=`${img}abrasivos.jpg`, alt="construccion ferreteria company")
+              h3.card-product__title ABRASIVOS
+          a(href="productos.html")
+            article.card-product
+              figure.card-product__img
+                img(src=`${img}griferias.jpg`, alt="construccion ferreteria company")
+              h3.card-product__title GRIFERÍAS
     section.advertising-layout
       h2.hide Por qué elegir a ferreteria company
       picture.advertising-layout__img
@@ -79,7 +84,7 @@ block main
           .advertising-layout__item
             img.advertising-layout__icon(src=`${img}icons/informes.png`, alt="informes")
             p.advertising-layout__title INFORMES
-    section.contact-layout
+    section#contact.contact-layout
       .contact-layout__top
         .contact-layout__container--top.container
           h2.contact-layout__title CONTACTO 

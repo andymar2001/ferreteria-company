@@ -1,0 +1,45 @@
+.product-detail {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem;
+    align-items: flex-start;
+  }
+  &__title {
+    margin: 0;
+    font-size: 3rem;
+    color: rgb(61, 61, 61);
+  }
+  &__description {
+    line-height: 1.5;
+  }
+  &__list {
+    & p {
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+    }
+    & span {
+      font-weight: 400;
+      margin-top: 1rem;
+    }
+  }
+  &__pdf {
+    color: $secondary-color;
+  }
+  &__gallery {
+    overflow: hidden;
+  }
+  &__slider {
+    &--nav {
+      margin-top: 2rem;
+      overflow: hidden;
+      & .slick-slide {
+        margin: 0 1rem;
+      }
+      & .slick-list {
+        margin: 0 -1rem;
+      }
+    }
+  }
+}

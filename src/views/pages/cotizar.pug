@@ -1,0 +1,106 @@
+extends ../templates/template
+block title-description
+  title Ferreteria Company - Cotizar
+  meta(name="description" content="Cotizar")
+block banner
+  .banner--page
+    p.banner__title Cotizar
+block main
+  main.main
+    section.quote.section
+      .quote__container.container
+        form#form-quote.form-quote(action="#")
+          p.form-quote__title Datos Personales
+          .form-quote__form
+            .form-quote__group
+              label.label(for="type-document") Tipo Documento
+              select.input(name="typeDocument" id="type-document")
+                option(value="ruc" selected) RUC
+                option(value="dni") DNI
+            .form-quote__group 
+              label.label(for="number-document") Nro. de RUC *
+              input.input(name="nroRuc" type="text" id="number-document")
+            #div-dni.form-quote__group--two
+              .form-quote__group
+                label.label(for="name-dni") Nombres *
+                input.input(name="nameDni" type="text" id="name-dni")
+              .form-quote__group
+                label.label(for="last-name-dni") Apellidos *
+                input.input(name="lastName" type="text" id="last-name-dni")
+            .form-quote__group 
+              label.label(for="business-name") Razón Social * 
+              input.input(name="businessName" type="text" id="business-name")
+            .form-quote__group 
+              label.label(for="telephone") Teléfono * 
+              input.input(name="telephone" type="text" id="telephone")
+            .form-quote__group 
+              label.label(for="email") Email * 
+              input.input(name="email" type="email" id="email")
+            .form-quote__group 
+              label.label(for="direction") Dirección de Entrega *
+              input.input(name="direction" type="text" id="direction")
+            .form-quote__group 
+              label.label(for="plant") Planta *
+              select.input(name="plant" id="plant")
+                option(value="trujillo" selected) Trujillo
+          .form-quote__list
+            p.form-quote__title Productos 1
+            .card.card--quote
+              figure.card__img
+                img(src=`${img}producto.jpg`, alt="producto cotizar")
+              h3.card__title Producto a cotizar
+              .card__group
+                label(for="cant-product").label Cantidad
+                input.input#cant-product(type="number", name="cant-product" placeholder="Cantidad" min="0")
+            .card.card--quote
+              figure.card__img
+                img(src=`${img}producto.jpg`, alt="producto cotizar")
+              h3.card__title Producto a cotizar
+              .card__group
+                label(for="cant-product").label Cantidad
+                input.input#cant-product(type="number", name="cant-product" placeholder="Cantidad" min="0")
+            .card.card--quote
+              figure.card__img
+                img(src=`${img}producto.jpg`, alt="producto cotizar")
+              h3.card__title Producto a cotizar
+              .card__group
+                label(for="cant-product").label Cantidad
+                input.input#cant-product(type="number", name="cant-product" placeholder="Cantidad" min="0")
+            .card.card--quote
+              figure.card__img
+                img(src=`${img}producto.jpg`, alt="producto cotizar")
+              h3.card__title Producto a cotizar
+              .card__group
+                label(for="cant-product").label Cantidad
+                input.input#cant-product(type="number", name="cant-product" placeholder="Cantidad" min="0")
+          .form-quote__list
+            p.form-quote__title Productos 2
+            .card.card--quote
+              figure.card__img
+                img(src=`${img}producto.jpg`, alt="producto cotizar")
+              h3.card__title Producto a cotizar
+              .card__group
+                label(for="cant-product").label Cantidad
+                input.input#cant-product(type="number", name="cant-product" placeholder="Cantidad" min="0")
+            .card.card--quote
+              figure.card__img
+                img(src=`${img}producto.jpg`, alt="producto cotizar")
+              h3.card__title Producto a cotizar
+              .card__group
+                label(for="cant-product").label Cantidad
+                input.input#cant-product(type="number", name="cant-product" placeholder="Cantidad" min="0")
+            .card.card--quote
+              figure.card__img
+                img(src=`${img}producto.jpg`, alt="producto cotizar")
+              h3.card__title Producto a cotizar
+              .card__group
+                label(for="cant-product").label Cantidad
+                input.input#cant-product(type="number", name="cant-product" placeholder="Cantidad" min="0")
+            .card.card--quote
+              figure.card__img
+                img(src=`${img}producto.jpg`, alt="producto cotizar")
+              h3.card__title Producto a cotizar
+              .card__group
+                label(for="cant-product").label Cantidad
+                input.input#cant-product(type="number", name="cant-product" placeholder="Cantidad" min="0")
+        input.form-quote__button.button(type="submit", value="Enviar")

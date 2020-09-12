@@ -1,0 +1,28 @@
+extends ../templates/template
+block title-description
+  title Ferreteria Company - Productos
+  meta(name="description" content="Productos")
+block main
+  main.main
+    section.products-page.section
+      .products-page__container.container
+        h2.title Ladrillos Para Muro
+        .filters
+          p.filters__text Mostrando todos los resultados <span>8</span>
+          form.filters__form(action="#")
+            select.input(name="orderby")
+              option(value="menu_order" selected) Orden por defecto
+              option(value="popularity") Ordenar por popularidad
+              option(value="rating") Ordenar por calificación media
+              option(value="date") Ordenar por las últimas
+              option(value="price") Ordenar por precio: bajo a alto
+              option(value="price-desc") Ordenar por precio: alto a bajo
+        .products-page__grid
+          +card
+          +card
+          +card
+          +card
+          +card
+          +card
+          +card
+          +card

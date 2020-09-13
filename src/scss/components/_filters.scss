@@ -6,4 +6,10 @@
   &__text {
     margin: 0;
   }
+  @include mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+    gap: 1rem;
+  }
 }

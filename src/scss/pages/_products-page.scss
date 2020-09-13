@@ -5,5 +5,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
   }
 }

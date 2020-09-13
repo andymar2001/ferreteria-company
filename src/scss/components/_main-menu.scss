@@ -35,6 +35,12 @@
     padding: 0 1rem;
     font-family: $main-title;
     font-size: 2rem;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
     @include tablet {
       padding: 0;
     }
@@ -42,6 +48,12 @@
       padding: 0 3rem;
       font-family: $main-title;
       font-size: 2rem;
+      transition-property: background-color, color;
+      transition-duration: 0.5s;
+      &:hover {
+        color: #fff;
+        background-color: #000;
+      }
       @include tablet {
         padding: 0;
       }

@@ -3,8 +3,8 @@
   overflow: hidden;
   cursor: pointer;
   &:hover &__img {
-    transform: scale(1.05);
-    filter: brightness(0.9);
+    transform: scale(1.08);
+    filter: brightness(0.6);
   }
   &:hover &__title {
     color: $white;

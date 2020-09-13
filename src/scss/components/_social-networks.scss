@@ -13,6 +13,12 @@
     align-items: center;
     font-size: 2rem;
     background-color: #fff;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
     @include mobile {
       width: 4.5rem;
       height: 4.5rem;

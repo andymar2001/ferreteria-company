@@ -7,6 +7,12 @@
   border: none;
   cursor: pointer;
   border-radius: 0.5rem;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  &:hover {
+    color: #000;
+    background-color: #fff;
+  }
   @include mobile {
     background-color: $primary-color;
     color: #fff;

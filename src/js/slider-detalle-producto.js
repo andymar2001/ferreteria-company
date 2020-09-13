@@ -12,4 +12,15 @@ $(".product-detail__slider--nav").slick({
   dots: false,
   centerMode: true,
   focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 581,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+  ],
 });

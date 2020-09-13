@@ -4,6 +4,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 8rem;
     align-items: flex-start;
+    @include tablet {
+      gap: 2rem;
+      grid-template-columns: 1fr;
+    }
+    @include mobile {
+      gap: 0rem;
+    }
   }
   &__title {
     margin: 0;

@@ -12,6 +12,7 @@
   &__img {
     transition-property: transform, filter;
     transition-duration: 0.5s;
+    height: 27rem;
     & img {
       width: 100%;
     }

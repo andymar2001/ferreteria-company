@@ -32,7 +32,7 @@
     }
   }
   &__item {
-    padding: 0 1rem;
+    padding: 1rem;
     font-family: $main-title;
     font-size: 2rem;
     transition-property: background-color, color;
@@ -45,7 +45,7 @@
       padding: 0;
     }
     &--footer {
-      padding: 0 3rem;
+      padding: 1rem 3rem;
       font-family: $main-title;
       font-size: 2rem;
       transition-property: background-color, color;

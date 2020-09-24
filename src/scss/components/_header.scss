@@ -3,6 +3,9 @@
   z-index: 25;
   top: 0;
   left: 0;
+  @include tablet {
+    position: relative;
+  }
   &__container {
     &--top {
       display: flex;

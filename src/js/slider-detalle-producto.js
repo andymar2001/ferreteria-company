@@ -10,7 +10,7 @@ $(".product-detail__slider--nav").slick({
   slidesToScroll: 1,
   asNavFor: ".product-detail__slider",
   dots: false,
-  centerMode: true,
+  centerMode: false,
   focusOnSelect: true,
   responsive: [
     {

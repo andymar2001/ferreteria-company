@@ -8,13 +8,13 @@ block main
       .product-detail__container.container
         .product-detail__gallery
           .product-detail__slider
-            div
+            a(href=`${img}producto.jpg` data-lightbox="image-product" data-title="Mi primer producto")
               figure.product-detail__img
                 img(src=`${img}producto.jpg`, alt="imagen producto")
-            div
+            a(href=`${img}producto.jpg` data-lightbox="image-product" data-title="Mi segundo producto")
               figure.product-detail__img
                 img(src=`${img}producto.jpg`, alt="imagen producto")
-            div
+            a(href=`${img}producto.jpg` data-lightbox="image-product" data-title="Mi tercer producto")
               figure.product-detail__img
                 img(src=`${img}producto.jpg`, alt="imagen producto")
           .product-detail__slider--nav
